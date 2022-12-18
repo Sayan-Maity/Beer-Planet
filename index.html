@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beer Planet</title>
+    <link rel = "icon" href = "images/beer.png" type = "image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pridi&family=Prompt:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4ed2198b96.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="home">
+        <div class="home__text">
+          <h1 class="header">Beer Planet</h1>
+          <p>
+            Feeling lucky? Spin the bottle for info about a random beer or
+            search for something specific
+          </p>
+        </div>
+
+        <div class="home__buttons">
+          <button class="btn js-random-btn btn--white">SPIN THE BOTTLE</button>
+          <button class="btn js-search-btn btn--purple">SEARCH</button>
+        </div>
+
+        <div class="home__img">
+          <img src="images/beer-img.png" alt="bottle-logo" />
+        </div>
+      </section>
+
+      <section class="search-section hide">
+        <form>
+          <div class="search-section__heading">
+            <h1 class="header">SEARCH</h1>
+          </div>
+          <div class="search-section__input">
+            <label for="search-beer">Beer Name:</label>
+            <input
+              id="search-beer"
+              class="js-search-input"
+              name="search-beer"
+              type="text"
+              autocomplete="off"
+            />
+          </div>
+          <div class="search-section__list hide">
+            <div class="pagination hide">
+              <i class="fas fa-angle-left page-left"></i>
+              
+                <span class="current-page"></span>
+              </p>
+              <i class="fas fa-angle-right page-right"></i>
+            </div>
+            <ul class="search-list"></ul>
+          </div>
+          <div class="search-preloader-wrapper hide">
+            <img class="search-preloader preloader" src="https://images.punkapi.com/v2/2.png" alt="">
+          </div>
+          <div class="no-results hide"><h4>NO MATCHING RESULTS</h4></div>
+          <h3 class="js-toggle-arrow">
+            Advanced Search <i class="advanced-arrow-toggle fas fa-angle-down"></i>
+          </h3>
+          <div class="search-section__advanced hide">
+            <div class="search-section__input">
+              <label for="search-beer">Hops:</label>
+              <input
+                id="search-hops"
+                class="js-search-input"
+                name="search-hops"
+                type="text"
+                data-query="hops"
+              />
+            </div>
+            <div class="search-section__input">
+              <label for="search-beer">Malt:</label>
+              <input
+                id="search-malt"
+                class="js-search-input"
+                name="search-malt"
+                type="text"
+                data-query="malt"
+              />
+            </div>
+            <div class="search-section__input">
+              <label for="search-beer">Brewed Before:</label>
+              <input
+                id="search-brewed-before"
+                class="js-search-input"
+                name="search-brewed-before"
+                type="month"
+                data-query="brewedBefore"
+                placeholder="year-month"
+                min="2007-01"
+                max="2014-12"
+              />
+            </div>
+            <div class="search-section__input">
+              <label for="search-beer">Brewed After:</label>
+              <input
+                id="search-brewed-after"
+                class="js-search-input"
+                name="search-brewed-after"
+                type="month"
+                min="2007-01"
+                data-query="brewedAfter"
+                placeholder="year-month"
+                min="2007-01"
+                max="2014-12"
+              />
+            </div>
+            <div class="search-section__input">
+              <label for="search-beer">Abv Greater Than:</label>
+              <input
+                id="search-abv-greater"
+                class="js-search-input"
+                name="search-abv-greater"
+                type="number"
+                min="1"
+                max="55"
+                data-query="abvGreater"
+              />
+            </div>
+            <div class="search-section__input">
+              <label for="search-beer">Abv Less Than:</label>
+              <input
+                id="search-abv-less"
+                class="js-search-input"
+                name="search-abv-less"
+                type="number"
+                min="1"
+                max="55"
+                data-query="abvLess"
+              />
+            </div>
+          </div>
+          <div class="search-section__buttons">
+            <button class="js-search-submit btn btn--white" type="submit">
+              Search
+            </button>
+            <button class="js-search-cancel btn btn--purple">Cancel</button>
+          </div>
+          <div class="no-inputs-message hide"><h4>NO INPUTS GIVEN</h4></div>
+        </form>
+      </section>
+      <section class="info js-info hide"></section>
+    </main>
+    <section class="modal js-modal hide">
+      <div class="preloader-wrapper hide">
+      <img class="modal-preloader preloader" src="https://images.punkapi.com/v2/2.png" alt="">
+    </div>
+      <div class="modal__close">
+        <h2 class="js-modal-close">X</h2>
+      </div>
+      <i class="fas fa-angle-left page-left"></i>
+      <div class="wrapper">
+        
+      </div>
+      <i class="fas fa-angle-right page-right"></i>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
