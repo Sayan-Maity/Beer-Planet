@@ -14,7 +14,7 @@ You are going to build a beer wiki that uses data from the Punk API (https://pun
 
 ![alt text](BeerCard.jpg)
 
-* Användaren ska kunna trycka på "See More" för att komma till "Beer Info Page" (Se längre ner för info).
+•	The user should be able to press "See More" to get to the "Beer Info Page" (See further down for info).
 
 
 #### Search Page
