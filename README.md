@@ -1,10 +1,10 @@
-# Beer Project
-
+# Beer Planet
+[![Netlify Status](https://api.netlify.com/api/v1/badges/43eb9b9f-4944-4196-9e6a-f06cde9a10d9/deploy-status)](https://app.netlify.com/sites/benevolent-dolphin-d3747e/deploys)
 ## Punk API
 You are going to build a beer wiki that uses data from the Punk API (https://punkapi.com/documentation/v2). The website should consist of three differenta views (pages)(see below for information on the different pages). The pages do not necessarily have to be individual HTML documents. A document that uses DOM manipulation to show different (pages) content is perfectly fine. The requirement is that ONE page (and not fler!) should be displayed at a time. In addition to the requirements specified below, you have a free hand (for example, regarding design).
 
 
-## Kravspecifikation
+## Specification
 
 ### G-requirements
 #### Landing Page (Random beer)
